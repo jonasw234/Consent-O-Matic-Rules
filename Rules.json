@@ -125,5 +125,59 @@
                 "name": "UTILITY"
             }
         ]
+    },
+    "Usercentrics Consent Management": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "button[data-testid='uc-privacy-button']"
+                        },
+                        "parent": {
+                            "selector": "#usercentrics-root"
+                        }
+                    }
+                ],
+                "showingMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "button[data-testid='uc-privacy-button']"
+                        },
+                        "parent": {
+                            "selector": "#usercentrics-root"
+                        }
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "name": "DO_CONSENT"
+            },
+            {
+                "action": {
+                    "type": "click",
+                    "target": {
+                        "selector": "button[data-testid='uc-deny-all-button']"
+                    },
+                    "parent": {
+                        "selector": "#usercentrics-root"
+                    }
+                },
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
     }
 }
