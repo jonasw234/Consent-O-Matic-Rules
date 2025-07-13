@@ -6,3 +6,4 @@ Currently supported:
 - [cookieBAR](https://cookie-bar.eu/)
 - [Plumrocket Cookie Consent](https://plumrocket.com/magento-cookie-consent)
 - [WPConsent](https://wpconsent.com/)
+- [Usercentrics Consent Management](https://usercentrics.com)
