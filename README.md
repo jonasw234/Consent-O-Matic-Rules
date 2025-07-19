@@ -7,3 +7,4 @@ Currently supported:
 - [Plumrocket Cookie Consent](https://plumrocket.com/magento-cookie-consent)
 - [WPConsent](https://wpconsent.com/)
 - [Usercentrics Consent Management](https://usercentrics.com)
+- [CCM19](https://www.ccm19.de/)
