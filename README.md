@@ -8,3 +8,4 @@ Currently supported:
 - [WPConsent](https://wpconsent.com/)
 - [Usercentrics Consent Management](https://usercentrics.com)
 - [CCM19](https://www.ccm19.de/)
+- [ysendit](https://ysendit.com)

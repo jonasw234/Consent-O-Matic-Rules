@@ -221,5 +221,99 @@
                 "name": "UTILITY"
             }
         ]
+    },
+    "ysendit.com": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "url",
+                        "url": [
+                            "ysendit.com"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "name": "DO_CONSENT"
+            },
+            {
+                "action": {
+                    "type": "list",
+                    "actions": [
+                        {
+                            "type": "click",
+                            "target": {
+                                "selector": "button[data-variant='secondary']"
+                            },
+                            "parent": {
+                                "selector": "div[class^='spectrum-Dialog']"
+                            }
+                        },
+                        {
+                            "type": "click",
+                            "target": {
+                                "selector": "button[data-variant='secondary']"
+                            },
+                            "parent": {
+                                "selector": "div[class^='spectrum-Dialog']"
+                            }
+                        }
+                    ]
+                },
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
+    },
+    "help.ysendit.com": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "url",
+                        "url": [
+                            "help.ysendit.com"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "name": "DO_CONSENT"
+            },
+            {
+                "action": {
+                    "type": "click",
+                    "target": {
+                        "selector": "button[aria-label='Reject']"
+                    },
+                    "parent": {
+                        "selector": "div[data-testid='cookies-dialog']"
+                    }
+                },
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
     }
 }
