@@ -315,5 +315,64 @@
                 "name": "UTILITY"
             }
         ]
+    },
+    "Real Cookie Banner 3.0 (EN)": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "div[consent-skip-blocker=\"1\"]",
+                            "textFilter": [
+                                "Privacy preferences"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "action": {
+                    "type": "list",
+                    "actions": [
+                        {
+                            "type": "waitcss",
+                            "target": {
+                                "selector": "a[role=\"button\"]",
+                                "textFilter": [
+                                    "Continue without consent"
+                                ]
+                            },
+                            "retries": 10,
+                            "waitTime": 250
+                        },
+                        {
+                            "type": "click",
+                            "target": {
+                                "selector": "a[role=\"button\"]",
+                                "textFilter": [
+                                    "Continue without consent"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "name": "DO_CONSENT"
+            },
+            {
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
     }
 }
