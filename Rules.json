@@ -180,6 +180,54 @@
             }
         ]
     },
+    "Usercentrics Consent Management #2": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "aside#usercentrics-cmp-ui"
+                        }
+                    }
+                ],
+                "showingMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "aside#usercentrics-cmp-ui"
+                        }
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "name": "DO_CONSENT"
+            },
+            {
+                "action": {
+                    "type": "click",
+                    "target": {
+                        "selector": "button[data-action-type='deny']"
+                    },
+                    "parent": {
+                        "selector": "aside#usercentrics-cmp-ui"
+                    }
+                },
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
+    },
     "CCM19": {
         "detectors": [
             {
