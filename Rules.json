@@ -422,5 +422,75 @@
                 "name": "UTILITY"
             }
         ]
+    },
+    "Real Cookie Banner (DE)": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "div[consent-skip-blocker=\"1\"]"
+                        }
+                    }
+                ],
+                "showingMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "a[href=\"https://devowl.io/de/wordpress-real-cookie-banner/\"]"
+                        }
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "name": "DO_CONSENT"
+            },
+            {
+                "action": {
+                    "type": "list",
+                    "actions": [
+                        {
+                            "type": "waitcss",
+                            "target": {
+                                "selector": "a[role=\"button\"]",
+                                "textFilter": [
+                                    "Weiter ohne Einwilligung"
+                                ]
+                            },
+                            "parent": {
+                                "selector": "div[consent-skip-blocker=\"1\"]"
+                            },
+                            "retries": 10,
+                            "waitTime": 250
+                        },
+                        {
+                            "type": "click",
+                            "target": {
+                                "selector": "a[role=\"button\"]",
+                                "textFilter": [
+                                    "Weiter ohne Einwilligung"
+                                ]
+                            },
+                            "parent": {
+                                "selector": "div[consent-skip-blocker=\"1\"]"
+                            }
+                        }
+                    ]
+                },
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
     }
 }
