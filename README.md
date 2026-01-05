@@ -9,4 +9,4 @@ Currently supported:
 - [Usercentrics Consent Management](https://usercentrics.com)
 - [CCM19](https://www.ccm19.de/)
 - [ysendit](https://ysendit.com)
-- [Real Cookie Banner 3.0](https://devowl.io/news/real-cookie-banner-3-0/) (English only at the moment)
+- [Real Cookie Banner 3.0](https://devowl.io/news/real-cookie-banner-3-0/) (English and German at the moment)
