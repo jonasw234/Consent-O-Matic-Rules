@@ -492,5 +492,83 @@
                 "name": "UTILITY"
             }
         ]
+    },
+    "x-data-Cookie-Consent-Modal": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "div[x-data=\"cookieConsentModal\"]"
+                        }
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "action": {
+                    "type": "click",
+                    "target": {
+                        "selector": "button.underline"
+                    },
+                    "parent": {
+                        "selector": "div[x-data=\"cookieConsentModal\"]"
+                    }
+                },
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "action": {
+                    "type": "list",
+                    "actions": [
+                        {
+                            "type": "click",
+                            "target": {
+                                "selector": "#ad_storage"
+                            }
+                        },
+                        {
+                            "type": "click",
+                            "target": {
+                                "selector": "#analytics_storage"
+                            }
+                        },
+                        {
+                            "type": "click",
+                            "target": {
+                                "selector": "#ad_user_data"
+                            }
+                        },
+                        {
+                            "type": "click",
+                            "target": {
+                                "selector": "#ad_personalization"
+                            }
+                        }
+                    ]
+                },
+                "name": "DO_CONSENT"
+            },
+            {
+                "action": {
+                    "type": "click",
+                    "target": {
+                        "selector": "button[x-ref=\"saveButton\"]"
+                    },
+                    "parent": {
+                        "selector": "div[x-data=\"cookieConsentModal\"]"
+                    }
+                },
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
     }
 }
