@@ -570,5 +570,42 @@
                 "name": "UTILITY"
             }
         ]
+    },
+    "Lightbox CC Dialog": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "div.cc-dialog"
+                        }
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "action": {
+                    "type": "click",
+                    "target": {
+                        "selector": "button.cc-dialog-button-decline"
+                    }
+                },
+                "name": "DO_CONSENT"
+            },
+            {
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
     }
 }
