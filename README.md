@@ -12,3 +12,4 @@ Currently supported:
 - [Real Cookie Banner 3.0](https://devowl.io/news/real-cookie-banner-3-0/) (English and German at the moment)
 - [x-data-Cookie-Consent-Banner](https://www.antratek.com/) (no idea if this is common, so I kept the detection generic instead of URL based)
 - [Lightbox CC Dialog](https://www.hackmod.de/) (no idea if this is common, so I kept the detection generic instead of URL based)
+- [Borlabs Cookie Consent](https://de.borlabs.io/)
