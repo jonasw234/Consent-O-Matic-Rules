@@ -683,7 +683,7 @@
                 "action": {
                     "type": "click",
                     "target": {
-                        "selector": "button.cky-button-reject"
+                        "selector": "button.cky-btn-reject"
                     }
                 },
                 "name": "SAVE_CONSENT"
