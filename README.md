@@ -13,3 +13,6 @@ Currently supported:
 - [x-data-Cookie-Consent-Banner](https://www.antratek.com/) (no idea if this is common, so I kept the detection generic instead of URL based)
 - [Lightbox CC Dialog](https://www.hackmod.de/) (no idea if this is common, so I kept the detection generic instead of URL based)
 - [Borlabs Cookie Consent](https://de.borlabs.io/)
+- [Cookie Yes](https://www.cookieyes.com/)
+- [Transcend Consent Manager](https://transcend.io/platform/consent-preference-management)
+- two generic detections, found e.g. on <https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them> and <https://report-uri.com/>
