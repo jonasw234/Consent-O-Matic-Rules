@@ -15,4 +15,5 @@ Currently supported:
 - [Borlabs Cookie Consent](https://de.borlabs.io/)
 - [Cookie Yes](https://www.cookieyes.com/)
 - [Transcend Consent Manager](https://transcend.io/platform/consent-preference-management)
+- [Cookie Consent v3](https://cookieconsent.orestbida.com/)
 - two generic detections, found e.g. on <https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them> and <https://report-uri.com/>
