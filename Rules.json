@@ -1,4 +1,4 @@
-{
+G{
     "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
     "cookieBAR": {
         "detectors": [
@@ -807,6 +807,43 @@
                     },
                     "parent": {
                         "selector": "div#transcend-consent-manager-tcf-ui"
+                    }
+                },
+                "name": "SAVE_CONSENT"
+            },
+            {
+                "name": "UTILITY"
+            }
+        ]
+    },
+    "Cookie Consent v3": {
+        "detectors": [
+            {
+                "presentMatcher": [
+                    {
+                        "type": "css",
+                        "target": {
+                            "selector": "div#cc-main"
+                        }
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "HIDE_CMP"
+            },
+            {
+                "name": "OPEN_OPTIONS"
+            },
+            {
+                "name": "DO_CONSENT"
+            },
+            {
+                "action": {
+                    "type": "click",
+                    "target": {
+                        "selector": "button[data-role=\"necessary\"]"
                     }
                 },
                 "name": "SAVE_CONSENT"
