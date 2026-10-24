@@ -1,4 +1,4 @@
-G{
+{
     "$schema": "https://raw.githubusercontent.com/cavi-au/Consent-O-Matic/master/rules.schema.json",
     "cookieBAR": {
         "detectors": [
