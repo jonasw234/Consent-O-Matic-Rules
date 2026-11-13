@@ -16,4 +16,7 @@ Currently supported:
 - [Cookie Yes](https://www.cookieyes.com/)
 - [Transcend Consent Manager](https://transcend.io/platform/consent-preference-management)
 - [Cookie Consent v3](https://cookieconsent.orestbida.com/)
-- two generic detections, found e.g. on <https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them> and <https://report-uri.com/>
+- [Cookie Control](https://cookiecontrol.com/)
+- [Finsweet Cookie Consent Banner for Webflow](https://finsweet.com/components/cookie-consent)
+- [FlowConsent](https://www.flowconsent.com/)
+- three generic detections, found e.g. on <https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them>, <https://report-uri.com/>, and <https://next-levels.de/>
